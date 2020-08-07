@@ -1,5 +1,5 @@
 
-for (s = 0; i < 11; s++) {
+for (s = 0; s < 11; s++) {
 var s = 1;
 	$.getJSON('js/yarns.json', function(data){
 	//console.log(data);
