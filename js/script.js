@@ -1,5 +1,6 @@
 
 for (s = 0; s < 11; s++) {
+	console.log(s);
 var s = 1;
 	$.getJSON('js/yarns.json', function(data){
 	//console.log(data);
@@ -8,7 +9,7 @@ var s = 1;
 	  $(data).each(function(i, entry){
 		  $yarn_selection.append("<option>" + entry.name + "</option>");
 	  });
-	})
+	});
 	
 	
 	$.getJSON('js/colors.json', function(data){
@@ -17,7 +18,7 @@ var s = 1;
 	  $(data).each(function(i, entry){
 		  $color_selection.append("<option>" + entry.name + "</option>");
 	  });
-	})
+	});
 	
 	var selector = "#amount" + s;
 	var $amount_selection = $(selector);
