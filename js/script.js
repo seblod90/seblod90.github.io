@@ -32,5 +32,5 @@ var $yarn_selection = $("#color1");
 var $yarn_selection = $("#amount1");
   $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
   for (i = 0; i < 10; i++) {
-  	$yarn_selection.append("<option>" + i.toString() + "</option>");	
+  	$yarn_selection.append("<option>" + "1" + "</option>");	
 }
