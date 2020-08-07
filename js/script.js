@@ -28,3 +28,9 @@ var $yarn_selection = $("#color1");
 	  $yarn_selection.append("<option>" + entry.name + "</option>");
   });
 })
+
+var $yarn_selection = $("#amount1");
+  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
+  for (i = 0; i < 10; i++) {
+  	$yarn_selection.append("<option>" + i.toString() + "</option>");	
+}
