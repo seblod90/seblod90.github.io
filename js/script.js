@@ -23,10 +23,10 @@ $.getJSON('js/yarns.json', function(data){
 	};
 });
 
-sel = "#color" + s; 
+
 $.getJSON('js/colors.json', function(data){
 	for (s = 1; s <= rows; s++) {
-		var $color_selection = $(sel);
+		var $color_selection = $("#color" + s);
 		  $color_selection.append('<option selected value="base">Farbe wählen</option>')
 		  $(data).each(function(j, entry){
 			  $color_selection.append("<option>" + entry.name + "</option>");
