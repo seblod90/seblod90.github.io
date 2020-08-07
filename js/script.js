@@ -10,7 +10,7 @@ var $secondChoice = $("#second-choice");
 })
 */
 
-for (s = 0; s < 5; s++) {
+for (s = 1; s < 5; s++) {
   	
 
 $.getJSON('js/yarns.json', function(data){
