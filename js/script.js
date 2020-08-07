@@ -22,12 +22,10 @@ var $yarn_selection = $("#yarn" + s);
 });
 
 sel = "#color" + s; 
-
-
 $.getJSON('js/colors.json', function(data){
 var $color_selection = $(sel);
   $color_selection.append('<option selected value="base">Bitte auswählen</option>')
-  $(data).each(function(i, entry){
+  $(data).each(function(j, entry){
 	  $color_selection.append("<option>" + entry.name + "</option>");
 	  console.log("added " + entry.name + " to " + sel);
   });
@@ -35,7 +33,7 @@ var $color_selection = $(sel);
 
 
 var $amount_selection = $("#amount" + s);
-  for (i = 0; i < 11; i++) {
+  for (k = 0; k < 11; k++) {
   	$amount_selection.append("<option>" + i + "</option>");	
 };
 
