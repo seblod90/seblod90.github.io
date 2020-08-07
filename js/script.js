@@ -40,7 +40,6 @@ var $amount_selection = $("#amount" + s);
 };
 
 console.log("wait...");
-setTimeout(function, 1000);
 
 
 console.log("yeah")
