@@ -22,15 +22,14 @@ var $yarn_selection = $("#yarn1");
 
 $.getJSON('js/colors.json', function(data){
 console.log(data);
-var $yarn_selection = $("#color1");
-  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
+var $color_selection = $("#color1");
+  $color_selection.append('<option selected value="base">Bitte auswählen</option>')
   $(data).each(function(i, entry){
-	  $yarn_selection.append("<option>" + entry.name + "</option>");
+	  $color_selection.append("<option>" + entry.name + "</option>");
   });
 })
 
-var $yarn_selection = $("#amount1");
-  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
-  for (i = 0; i < 10; i++) {
-  	$yarn_selection.append("<option>" + "1" + "</option>");	
+var $amount_selection = $("#amount1");
+  for (i = 0; i < 11; i++) {
+  	$amount_selection.append("<option>" + i + "</option>");	
 }
