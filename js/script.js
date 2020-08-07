@@ -21,9 +21,11 @@ var $yarn_selection = $("#yarn" + s);
   });
 });
 
+sel = "#color" + s; 
+console.log(sel)
 
 $.getJSON('js/colors.json', function(data){
-var $color_selection = $("#color" + s);
+var $color_selection = $(sel);
   $color_selection.append('<option selected value="base">Bitte auswählen</option>')
   $(data).each(function(i, entry){
 	  $color_selection.append("<option>" + entry.name + "</option>");
