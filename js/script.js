@@ -10,15 +10,17 @@ var $secondChoice = $("#second-choice");
 })
 */
 
-for (s = 1; s < 5; s++) {
+
   	
 
 $.getJSON('js/yarns.json', function(data){
-var $yarn_selection = $("#yarn" + s);
-  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
-  $(data).each(function(i, entry){
-	  $yarn_selection.append("<option>" + entry.name + "</option>");
-  });
+	for (s = 1; s < 5; s++) {
+		var $yarn_selection = $("#yarn" + s);
+		  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
+		  $(data).each(function(i, yarn){
+			  $yarn_selection.append("<option>" + yarn.name + "</option>");
+		  });
+	};
 });
 
 sel = "#color" + s; 
@@ -40,7 +42,6 @@ var $amount_selection = $("#amount" + s);
 console.log("wait...");
 setTimeout(function, 1000);
 
-}
 
 console.log("yeah")
 
