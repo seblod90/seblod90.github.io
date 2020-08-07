@@ -37,7 +37,8 @@ var $amount_selection = $("#amount" + s);
   	$amount_selection.append("<option>" + k + "</option>");	
 };
 
-setTimeout(function, 1000)
+console.log("wait...");
+setTimeout(function, 1000);
 
 }
 
