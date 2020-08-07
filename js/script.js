@@ -2,7 +2,7 @@
 // Not possible to loop over all getJSON because asynchronus appearance
 var rows = 5;
 
-$.getJSON('js/yarns.json', function(yarns){
+$.getJSON('js/yarns.json', function(data){
 	for (s = 1; s <= rows; s++) {
 		var $yarn_selection = $("#yarn" + s);
 		  $yarn_selection.append('<option selected value="base">Garn wählen</option>')
