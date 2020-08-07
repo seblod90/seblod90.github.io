@@ -1,5 +1,5 @@
 
-//for (s = 1; s <= 5; s++) {
+for (s = 0; i < 11; s++) {
 var s = 1;
 	$.getJSON('js/yarns.json', function(data){
 	//console.log(data);
@@ -25,4 +25,4 @@ var s = 1;
 		$amount_selection.append("<option>" + i + "</option>");	
 	}
 
-//}
+}
