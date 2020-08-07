@@ -34,7 +34,7 @@ var $color_selection = $(sel);
 
 var $amount_selection = $("#amount" + s);
   for (k = 0; k < 11; k++) {
-  	$amount_selection.append("<option>" + i + "</option>");	
+  	$amount_selection.append("<option>" + k + "</option>");	
 };
 
 }
