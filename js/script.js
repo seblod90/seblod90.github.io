@@ -13,6 +13,7 @@ var $secondChoice = $("#second-choice");
 $.getJSON('js/yarns.json', function(data){
 // console.log(data);
 var $yarn_selection = $("#yarn1");
+  $yarn_selection.append('<option selected value="base">Bitte auswählen</option>')
   $(data).each(function(i, entry){
 	  $yarn_selection.append("<option>" + entry.name + "</option>");
   });
