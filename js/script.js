@@ -38,3 +38,5 @@ var $amount_selection = $("#amount" + s);
 };
 
 }
+
+console.log("yeah")
