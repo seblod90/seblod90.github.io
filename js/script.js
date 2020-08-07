@@ -29,7 +29,7 @@ var $color_selection = $(sel);
   $color_selection.append('<option selected value="base">Bitte auswählen</option>')
   $(data).each(function(i, entry){
 	  $color_selection.append("<option>" + entry.name + "</option>");
-	  console.log("added " + entry.name);
+	  console.log("added " + entry.name + " to " + sel);
   });
 });
 
