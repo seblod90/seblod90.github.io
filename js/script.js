@@ -35,9 +35,10 @@ $.getJSON('js/colors.json', function(data){
 	};
 });
 
-
-var $amount_selection = $("#amount" + s);
-$amount_selection.append("<option>Anzahl</option>");	
-for (k = 0; k < 11; k++) {
-  	$amount_selection.append("<option>" + k + "</option>");	
-};
+for (s = 1; s <= rows; s++) {
+	var $amount_selection = $("#amount" + s);
+	$amount_selection.append("<option>Anzahl</option>");	
+	for (k = 0; k < 11; k++) {
+		$amount_selection.append("<option>" + k + "</option>");	
+	};
+}
