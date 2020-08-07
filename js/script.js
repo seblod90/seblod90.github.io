@@ -32,6 +32,6 @@ for (s = 1; s <= rows; s++) {
 }
 
 function val() {
-    d = document.getElementById("select_id").value;
+    d = document.getElementById("yarn1").value;
     alert(d);
 }
