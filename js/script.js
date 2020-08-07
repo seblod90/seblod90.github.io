@@ -31,7 +31,7 @@ for (s = 1; s <= rows; s++) {
 	};
 }
 
-// addEventListener version
-document.addEventListener('#yarn1', () => {
-  console.log(document.getSelection());
-});
+function val() {
+    d = document.getElementById("select_id").value;
+    alert(d);
+}
