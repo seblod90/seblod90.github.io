@@ -36,11 +36,11 @@ for (s = 1; s <= rows; s++) {
 function val() {
     d = document.getElementById("yarn1").value;
     alert(d);
-    document.getElementById("price1").value = "20 Euro";
+    document.getElementById("#price1").value = "20 Euro";
     //$.getJSON('js/yarns.json', function(data){
 	//}
 	var sel = document.getElementById('yarn1');
 	console.log( sel.selectedIndex );
 }
 
-document.getElementById("price2").value = "nuu";
+document.getElementById("#price2").value = "nuu";
