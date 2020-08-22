@@ -37,4 +37,9 @@ function val() {
     d = document.getElementById("yarn1").value;
     alert(d);
     document.getElementById("price1").value = "20 Euro";
+    console.log(
+    //$.getJSON('js/yarns.json', function(data){
+	//}
+	var sel = document.getElementById('yarn1');
+	console.log( sel.selectedIndex );
 }
