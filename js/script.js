@@ -43,3 +43,5 @@ function val() {
 	var sel = document.getElementById('yarn1');
 	console.log( sel.selectedIndex );
 }
+
+document.getElementById("price2").value = "nuu";
