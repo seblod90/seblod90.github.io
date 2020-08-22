@@ -43,4 +43,6 @@ function val() {
 	console.log( sel.selectedIndex );
 }
 
-document.getElementById("#price2").textContent = "nuu";
+$('#yarn1').on('change', function() {
+  alert( this.value );
+});
