@@ -35,5 +35,7 @@ for (s = 1; s <= rows; s++) {
 
 $('#yarn1').on('change', function() {
   alert( this.value );
-  document.getElementById('#price1').innerHTML = '20,00 Euro';
+  
+  document.querySelector("#price1").innerHTML = "Hello World!";
+  //document.getElementById('#price1').innerHTML = '20,00 Euro';
 });
