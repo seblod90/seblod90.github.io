@@ -43,4 +43,4 @@ function val() {
 	console.log( sel.selectedIndex );
 }
 
-document.getElementById("#price2").value = "nuu";
+document.getElementById("#price2").textContent = "nuu";
