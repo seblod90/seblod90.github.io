@@ -34,5 +34,16 @@ for (s = 1; s <= rows; s++) {
 }
 
 $('#yarn1').on('change', function() {
-	document.querySelector("#price1").innerHTML = this.selectedIndex;
+	if (this.selectedIndex == 0) {
+		document.querySelector("#price1").innerHTML = "0,00 Euro"
+	} else {
+	
+		$.getJSON('js/yarns.json', function(data){
+			$(data).each(function(i, yarn){
+				  if (this.selectedIndex == i) {
+					  document.querySelector("#price1").innerHTML = yarn.price;
+				  }		  
+			  });
+		});
+	}
 });
