@@ -34,6 +34,7 @@ for (s = 1; s <= rows; s++) {
 }
 
 $('#yarn1').on('change', function() {
+	var selID = this.selectedIndex; 
 	
 	alert(this.selectedIndex);
 	
@@ -44,7 +45,7 @@ $('#yarn1').on('change', function() {
 		alert('== 1/2 erkannt');
 		$.getJSON('js/yarns.json', function(data){
 			$(data).each(function(i, yarn){
-				  if (this.selectedIndex == i) {
+				  if (selID == yarn.id) {
 					  document.querySelector("#price1").innerHTML = yarn.price;
 				  }		  
 			  });
