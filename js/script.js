@@ -2,6 +2,7 @@
 // Not possible to loop over all getJSON because asynchronus appearance
 var rows = 5;
 
+// Yarn selection
 $.getJSON('js/yarns.json', function(data){
 	for (s = 1; s <= rows; s++) {
 		var $yarn_selection = $("#yarn" + s);
@@ -12,7 +13,7 @@ $.getJSON('js/yarns.json', function(data){
 	};
 });
 
-
+// Color selection
 $.getJSON('js/colors.json', function(data){
 	for (s = 1; s <= rows; s++) {
 		var $color_selection = $("#color" + s);
@@ -23,6 +24,7 @@ $.getJSON('js/colors.json', function(data){
 	};
 });
 
+// Amount selection
 for (s = 1; s <= rows; s++) {
 	var $amount_selection = $("#amount" + s);
 	$amount_selection.append("<option>Anzahl wählen</option>");	
@@ -34,4 +36,5 @@ for (s = 1; s <= rows; s++) {
 function val() {
     d = document.getElementById("yarn1").value;
     alert(d);
+    document.getElementById("price1") = "20";
 }
