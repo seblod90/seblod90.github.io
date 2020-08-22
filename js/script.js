@@ -36,5 +36,5 @@ for (s = 1; s <= rows; s++) {
 function val() {
     d = document.getElementById("yarn1").value;
     alert(d);
-    document.getElementById("price1") = "20";
+    document.getElementById("price1").value = "20 Euro";
 }
